@@ -16,7 +16,7 @@ python manage.py migrate
 python manage.py loaddata jachty_api/fixtures/initial_data.json
 ```
 
-## Backend RUN (Windows)
+## RUN Backend (Windows)
 
 1. Go to the main project directory (where the current readme.md file is located) and execute:
 
