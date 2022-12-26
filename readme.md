@@ -1,5 +1,5 @@
 
-## Backend environment preparation (Windows)
+## Backend environment preparation and test database creation (Windows)
 
 1. install Python
 2. Install PIP package manager
