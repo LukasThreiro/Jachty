@@ -1,0 +1,468 @@
+[
+  {
+    "model": "jachty_api.TypJachtu",
+    "pk": 1,
+    "fields": {
+      "IDTypu": 1,
+      "nazwaTypu": "żaglowy"
+    }
+  },
+  {
+    "model": "jachty_api.TypJachtu",
+    "pk": 2,
+    "fields": {
+      "IDTypu": 2,
+      "nazwaTypu": "motorowy"
+    }
+  },
+  {
+    "model": "jachty_api.Jacht",
+    "pk": 1,
+    "fields": {
+      "IDJachtu": 1,
+      "IDTypu": 1,
+      "nazwa": "Super Jacht 1",
+      "cenaZaDobe": 350.00,
+      "zdjecie": "jacht01.jpg",
+      "opis": "Bardzo sprawny jacht"
+    }
+  },
+  {
+    "model": "jachty_api.Jacht",
+    "pk": 1,
+    "fields": {
+      "IDJachtu": 2,
+      "IDTypu": 1,
+      "nazwa": "Super Jacht 2",
+      "cenaZaDobe": 400.00,
+      "zdjecie": "jacht02.jpg",
+      "opis": "Najlepszy jacht żaglowy w naszej kolekcji"
+    }
+  },
+  {
+    "model": "jachty_api.Jacht",
+    "pk": 1,
+    "fields": {
+      "IDJachtu": 3,
+      "IDTypu": 1,
+      "nazwa": "Super Jacht 3",
+      "cenaZaDobe": 375.00,
+      "zdjecie": "jacht03.jpg",
+      "opis": "Idealny na długie podróże"
+    }
+  },
+  {
+    "model": "jachty_api.Jacht",
+    "pk": 1,
+    "fields": {
+      "IDJachtu": 4,
+      "IDTypu": 2,
+      "nazwa": "Super Jacht 4",
+      "cenaZaDobe": 360.00,
+      "zdjecie": "jacht04.jpg",
+      "opis": "Typowy jacht motorowy"
+    }
+  },
+  {
+    "model": "jachty_api.Jacht",
+    "pk": 1,
+    "fields": {
+      "IDJachtu": 5,
+      "IDTypu": 2,
+      "nazwa": "Super Jacht 5",
+      "cenaZaDobe": 420.00,
+      "zdjecie": "jacht05.jpg",
+      "opis": "Nie ma szybszego jachtu niż ten"
+    }
+  },
+  {
+    "model": "jachty_api.Jacht",
+    "pk": 1,
+    "fields": {
+      "IDJachtu": 6,
+      "IDTypu": 2,
+      "nazwa": "Super Jacht 6",
+      "cenaZaDobe": 395.00,
+      "zdjecie": "jacht06.jpg",
+      "opis": "Uzbrojony w działko kal. 155 mm"
+    }
+  },
+  {
+    "model": "jachty_api.Klient",
+    "pk": 1,
+    "fields": {
+      "IDKlienta": 1,
+      "imie": "Janusz",
+      "nazwisko": "Biegacki",
+      "pesel": "12345678901"
+    }
+  },
+  {
+    "model": "jachty_api.Klient",
+    "pk": 2,
+    "fields": {
+      "IDKlienta": 2,
+      "imie": "Grażyna",
+      "nazwisko": "Borewicz",
+      "pesel": "12345678888"
+    }
+  },
+  {
+    "model": "jachty_api.Klient",
+    "pk": 3,
+    "fields": {
+      "IDKlienta": 3,
+      "imie": "Jarosław",
+      "nazwisko": "Makarowski",
+      "pesel": "1999678901"
+    }
+  },
+  {
+    "model": "jachty_api.Rezerwacja",
+    "pk": 1,
+    "fields": {
+      "IDRezerwacji": 1,
+      "IDJachtu": 1,
+      "IDKlienta": 1,
+      "dataOd": "2023-01-01T00:00:00+02:00",
+      "dataDo": "2023-01-16T00:00:00+02:00",
+      "uwagi": ""
+    }
+  },
+  {
+    "model": "jachty_api.Rezerwacja",
+    "pk": 2,
+    "fields": {
+      "IDRezerwacji": 2,
+      "IDJachtu": 1,
+      "IDKlienta": 2,
+      "dataOd": "2023-01-20T00:00:00+02:00",
+      "dataDo": "2023-01-25T00:00:00+02:00",
+      "uwagi": ""
+    }
+  },
+  {
+    "model": "jachty_api.Rezerwacja",
+    "pk": 3,
+    "fields": {
+      "IDRezerwacji": 3,
+      "IDJachtu": 1,
+      "IDKlienta": 3,
+      "dataOd": "2023-01-28T00:00:00+02:00",
+      "dataDo": "2023-02-11T00:00:00+02:00",
+      "uwagi": ""
+    }
+  },
+  {
+    "model": "jachty_api.Rezerwacja",
+    "pk": 4,
+    "fields": {
+      "IDRezerwacji": 4,
+      "IDJachtu": 1,
+      "IDKlienta": 1,
+      "dataOd": "2023-02-17T00:00:00+02:00",
+      "dataDo": "2023-02-19T00:00:00+02:00",
+      "uwagi": ""
+    }
+  },
+  {
+    "model": "jachty_api.Rezerwacja",
+    "pk": 5,
+    "fields": {
+      "IDRezerwacji": 5,
+      "IDJachtu": 2,
+      "IDKlienta": 2,
+      "dataOd": "2023-01-01T00:00:00+02:00",
+      "dataDo": "2023-01-08T00:00:00+02:00",
+      "uwagi": ""
+    }
+  },
+  {
+    "model": "jachty_api.Rezerwacja",
+    "pk": 6,
+    "fields": {
+      "IDRezerwacji": 6,
+      "IDJachtu": 2,
+      "IDKlienta": 3,
+      "dataOd": "2023-01-15T00:00:00+02:00",
+      "dataDo": "2023-01-19T00:00:00+02:00",
+      "uwagi": ""
+    }
+  },
+  {
+    "model": "jachty_api.Rezerwacja",
+    "pk": 7,
+    "fields": {
+      "IDRezerwacji": 7,
+      "IDJachtu": 2,
+      "IDKlienta": 1,
+      "dataOd": "2023-02-03T00:00:00+02:00",
+      "dataDo": "2023-02-11T00:00:00+02:00",
+      "uwagi": ""
+    }
+  },
+  {
+    "model": "jachty_api.Rezerwacja",
+    "pk": 8,
+    "fields": {
+      "IDRezerwacji": 8,
+      "IDJachtu": 3,
+      "IDKlienta": 1,
+      "dataOd": "2023-01-10T00:00:00+02:00",
+      "dataDo": "2023-01-15T00:00:00+02:00",
+      "uwagi": ""
+    }
+  },
+  {
+    "model": "jachty_api.Rezerwacja",
+    "pk": 9,
+    "fields": {
+      "IDRezerwacji": 9,
+      "IDJachtu": 3,
+      "IDKlienta": 2,
+      "dataOd": "2023-01-25T00:00:00+02:00",
+      "dataDo": "2023-02-04T00:00:00+02:00",
+      "uwagi": ""
+    }
+  },
+  {
+    "model": "jachty_api.Rezerwacja",
+    "pk": 10,
+    "fields": {
+      "IDRezerwacji": 10,
+      "IDJachtu": 3,
+      "IDKlienta": 3,
+      "dataOd": "2023-02-11T00:00:00+02:00",
+      "dataDo": "2023-02-18T00:00:00+02:00",
+      "uwagi": ""
+    }
+  },
+  {
+    "model": "jachty_api.Rezerwacja",
+    "pk": 11,
+    "fields": {
+      "IDRezerwacji": 11,
+      "IDJachtu": 4,
+      "IDKlienta": 1,
+      "dataOd": "2023-01-05T00:00:00+02:00",
+      "dataDo": "2023-01-13T00:00:00+02:00",
+      "uwagi": ""
+    }
+  },
+  {
+    "model": "jachty_api.Rezerwacja",
+    "pk": 12,
+    "fields": {
+      "IDRezerwacji": 12,
+      "IDJachtu": 4,
+      "IDKlienta": 2,
+      "dataOd": "2023-01-21T00:00:00+02:00",
+      "dataDo": "2023-01-27T00:00:00+02:00",
+      "uwagi": ""
+    }
+  },
+  {
+    "model": "jachty_api.Rezerwacja",
+    "pk": 13,
+    "fields": {
+      "IDRezerwacji": 13,
+      "IDJachtu": 4,
+      "IDKlienta": 3,
+      "dataOd": "2023-02-04T00:00:00+02:00",
+      "dataDo": "2023-02-12T00:00:00+02:00",
+      "uwagi": ""
+    }
+  },
+  {
+    "model": "jachty_api.Rezerwacja",
+    "pk": 14,
+    "fields": {
+      "IDRezerwacji": 14,
+      "IDJachtu": 4,
+      "IDKlienta": 1,
+      "dataOd": "2023-02-18T00:00:00+02:00",
+      "dataDo": "2023-02-20T00:00:00+02:00",
+      "uwagi": ""
+    }
+  },
+  {
+    "model": "jachty_api.Rezerwacja",
+    "pk": 15,
+    "fields": {
+      "IDRezerwacji": 15,
+      "IDJachtu": 5,
+      "IDKlienta": 1,
+      "dataOd": "2023-01-03T00:00:00+02:00",
+      "dataDo": "2023-01-08T00:00:00+02:00",
+      "uwagi": ""
+    }
+  },
+  {
+    "model": "jachty_api.Rezerwacja",
+    "pk": 16,
+    "fields": {
+      "IDRezerwacji": 16,
+      "IDJachtu": 5,
+      "IDKlienta": 2,
+      "dataOd": "2023-01-10T00:00:00+02:00",
+      "dataDo": "2023-01-12T00:00:00+02:00",
+      "uwagi": ""
+    }
+  },
+  {
+    "model": "jachty_api.Rezerwacja",
+    "pk": 17,
+    "fields": {
+      "IDRezerwacji": 17,
+      "IDJachtu": 5,
+      "IDKlienta": 3,
+      "dataOd": "2023-01-15T00:00:00+02:00",
+      "dataDo": "2023-01-19T00:00:00+02:00",
+      "uwagi": ""
+    }
+  },
+  {
+    "model": "jachty_api.Rezerwacja",
+    "pk": 18,
+    "fields": {
+      "IDRezerwacji": 18,
+      "IDJachtu": 5,
+      "IDKlienta": 1,
+      "dataOd": "2023-01-23T00:00:00+02:00",
+      "dataDo": "2023-01-25T00:00:00+02:00",
+      "uwagi": ""
+    }
+  },
+  {
+    "model": "jachty_api.Rezerwacja",
+    "pk": 19,
+    "fields": {
+      "IDRezerwacji": 19,
+      "IDJachtu": 5,
+      "IDKlienta": 2,
+      "dataOd": "2023-02-03T00:00:00+02:00",
+      "dataDo": "2023-02-08T00:00:00+02:00",
+      "uwagi": ""
+    }
+  },
+  {
+    "model": "jachty_api.Rezerwacja",
+    "pk": 20,
+    "fields": {
+      "IDRezerwacji": 20,
+      "IDJachtu": 5,
+      "IDKlienta": 3,
+      "dataOd": "2023-02-11T00:00:00+02:00",
+      "dataDo": "2023-02-16T00:00:00+02:00",
+      "uwagi": ""
+    }
+  },
+  {
+    "model": "jachty_api.Rezerwacja",
+    "pk": 21,
+    "fields": {
+      "IDRezerwacji": 21,
+      "IDJachtu": 6,
+      "IDKlienta": 1,
+      "dataOd": "2023-01-02T00:00:00+02:00",
+      "dataDo": "2023-01-09T00:00:00+02:00",
+      "uwagi": ""
+    }
+  },
+  {
+    "model": "jachty_api.Rezerwacja",
+    "pk": 22,
+    "fields": {
+      "IDRezerwacji": 22,
+      "IDJachtu": 6,
+      "IDKlienta": 2,
+      "dataOd": "2023-01-17T00:00:00+02:00",
+      "dataDo": "2023-01-21T00:00:00+02:00",
+      "uwagi": ""
+    }
+  },
+  {
+    "model": "jachty_api.Rezerwacja",
+    "pk": 23,
+    "fields": {
+      "IDRezerwacji": 23,
+      "IDJachtu": 6,
+      "IDKlienta": 3,
+      "dataOd": "2023-01-30T00:00:00+02:00",
+      "dataDo": "2023-02-06T00:00:00+02:00",
+      "uwagi": ""
+    }
+  },
+  {
+    "model": "jachty_api.Rezerwacja",
+    "pk": 24,
+    "fields": {
+      "IDRezerwacji": 24,
+      "IDJachtu": 6,
+      "IDKlienta": 1,
+      "dataOd": "2023-02-09T00:00:00+02:00",
+      "dataDo": "2023-02-11T00:00:00+02:00",
+      "uwagi": ""
+    }
+  },
+  {
+    "model": "jachty_api.Rezerwacja",
+    "pk": 25,
+    "fields": {
+      "IDRezerwacji": 25,
+      "IDJachtu": 6,
+      "IDKlienta": 2,
+      "dataOd": "2023-02-14T00:00:00+02:00",
+      "dataDo": "2023-02-14T00:00:00+02:00",
+      "uwagi": ""
+    }
+  },
+  {
+    "model": "jachty_api.Rezerwacja",
+    "pk": 26,
+    "fields": {
+      "IDRezerwacji": 26,
+      "IDJachtu": 6,
+      "IDKlienta": 2,
+      "dataOd": "2023-02-16T00:00:00+02:00",
+      "dataDo": "2023-02-16T00:00:00+02:00",
+      "uwagi": ""
+    }
+  },
+  {
+    "model": "jachty_api.Rezerwacja",
+    "pk": 27,
+    "fields": {
+      "IDRezerwacji": 27,
+      "IDJachtu": 6,
+      "IDKlienta": 3,
+      "dataOd": "2023-02-19T00:00:00+02:00",
+      "dataDo": "2023-02-21T00:00:00+02:00",
+      "uwagi": ""
+    }
+  },
+  {
+    "model": "jachty_api.Rezerwacja",
+    "pk": 28,
+    "fields": {
+      "IDRezerwacji": 28,
+      "IDJachtu": 6,
+      "IDKlienta": 1,
+      "dataOd": "2023-02-24T00:00:00+02:00",
+      "dataDo": "2023-02-24T00:00:00+02:00",
+      "uwagi": ""
+    }
+  },
+  {
+    "model": "jachty_api.Rezerwacja",
+    "pk": 29,
+    "fields": {
+      "IDRezerwacji": 29,
+      "IDJachtu": 6,
+      "IDKlienta": 2,
+      "dataOd": "2023-02-27T00:00:00+02:00",
+      "dataDo": "2023-02-28T00:00:00+02:00",
+      "uwagi": ""
+    }
+  }
+]
