@@ -1,4 +1,6 @@
 
+# Windows preparation
+
 ## Backend environment preparation and test database creation (Windows)
 
 1. install Python
@@ -23,4 +25,50 @@ python manage.py loaddata jachty_api/fixtures/initial_data.json
 ```
 venv\Scripts\activate.bat
 python manage.py runserver 8888
+```
+
+## Frontend environment preparation (Windows)
+
+1. Install NPM package manager
+2. Install Vue.js
+
+```
+npm install -g @vue/cli
+npm audit fix --force
+npm install --location=global yarn
+yarn add vue-router@4
+```
+
+## RUN Frontend (Windows)
+
+1. Go to jachty_application/ directory
+
+```
+yarn serve
+```
+
+# Ubuntu preparation
+
+## Backend environment preparation and test database creation
+```
+sudo apt-get update
+pip3 install virtualenv
+virtualenv venv2
+. venv2/bin/activate
+pip3 install -r requirements.txt
+python3 manage.py createsuperuser
+python3 manage.py makemigrations
+python3 manage.py migrate
+python3 manage.py loaddata jachty_api/fixtures/initial_data.json
+```
+
+## RUN Backend
+```
+python3 manage.py runserver 8888
+```
+
+## Frontend environment preparation
+```
+sudo apt-get update
+sudo apt install nodejs npm
 ```

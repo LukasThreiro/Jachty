@@ -3,13 +3,41 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 from datetime import date, timedelta, datetime
+from django.http import HttpResponse, JsonResponse
+from asgiref.sync import sync_to_async
 
 from .models import TypJachtu, Jacht, Klient, Rezerwacja
 from .serializers import JachtSerializer, TypJachtuSerializer
 
-class JachtyApiView(APIView):
+from django.http import HttpResponse
+
+class JachtyZagloweApiView(APIView):
+	#@sync_to_async
 	def post(self, request, *args, **kwargs):
-		jachty = Jacht.objects
+		jachty = Jacht.objects.filter(IDTypu = 1)
+		serializer = JachtSerializer(jachty, many=True)
+		resp = {"data": serializer.data}
+		return Response(resp, status=status.HTTP_200_OK)
+	
+	#@sync_to_async
+	def get(self, request, *args, **kwargs):
+		jachty = Jacht.objects.filter(IDTypu = 1)
+		serializer = JachtSerializer(jachty, many=True)
+		return JsonResponse(serializer.data, safe=False)
+		
+
+@sync_to_async
+def JachtyZaglowe(request):
+	jachty = Jacht.objects.filter(IDTypu = 1)
+	serializer = JachtSerializer(jachty, many=True)
+	r = serializer.data
+	resp = {"data": r}
+	#return Response(resp, status=status.HTTP_200_OK)
+	return HttpResponse(resp)
+
+class JachtyMotoroweApiView(APIView):
+	def post(self, request, *args, **kwargs):
+		jachty = Jacht.objects.filter(IDTypu = 2)
 		serializer = JachtSerializer(jachty, many=True)
 		return Response(serializer.data, status=status.HTTP_200_OK)
 
